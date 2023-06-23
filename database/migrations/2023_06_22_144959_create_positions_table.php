@@ -11,10 +11,8 @@ class CreatePositionsTable extends Migration
     {
         Schema::create('positions', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->integer('price');
-            $table->text('description');
-            $table->string('gambar');
+            $table->string('code_position');
+            $table->string('position');
             $table->timestamps();
         });
     }

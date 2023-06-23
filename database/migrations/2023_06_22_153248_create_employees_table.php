@@ -10,6 +10,11 @@ return new class extends Migration
     {
         Schema::create('employees', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('position');
+            $table->integer('price');
+            $table->text('description');
+            $table->string('gambar');
             $table->timestamps();
         });
     }
