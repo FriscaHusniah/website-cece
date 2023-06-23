@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Schema;
 class CreatePositionsTable extends Migration
 {
     public function up(): void
+    // tess
     {
         Schema::create('positions', function (Blueprint $table) {
             $table->id();
